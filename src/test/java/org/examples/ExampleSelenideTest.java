@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import ru.testit.annotations.WorkItemIds;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.visible;
@@ -30,6 +31,7 @@ public class ExampleSelenideTest {
     }
 
     @Test
+    @WorkItemIds("9492")
     public void search() {
         mainPage.searchButton.click();
 
@@ -39,6 +41,7 @@ public class ExampleSelenideTest {
     }
 
     @Test
+    @WorkItemIds("9493")
     public void toolsMenu() {
         mainPage.toolsMenu.click();
 
@@ -46,6 +49,7 @@ public class ExampleSelenideTest {
     }
 
     @Test
+    @WorkItemIds("9494")
     public void navigationToAllTools() {
         mainPage.seeDeveloperToolsButton.click();
         mainPage.findYourToolsButton.click();
